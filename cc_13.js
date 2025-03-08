@@ -1,3 +1,4 @@
+//Task 2
 function addEmployeeCard(name, position) {
     //Employee container
     const employeeContainer = document.getElementById("employeeContainer");
@@ -24,4 +25,15 @@ function addEmployeeCard(name, position) {
     card.appendChild(removeButton);
     //Append the card to the employee container
     employeeContainer.appendChild(card);
+}
+//Task 3
+function highlightAllCards() {
+    //Select all employee cards using querySelectorAll
+    const employeeCards = document.querySelectorAll(".employee-card");
+    //Convert the NodeList to an array 
+    const employeeCardsArray = Array.from(employeeCards); 
+    employeeCardsArray.forEach(card => {
+        card.style.backgroundColor = "#ffeb3b"; //Change background color 
+        card.style.border = "2px solid #f44336"; //Add red border
+    });
 }
