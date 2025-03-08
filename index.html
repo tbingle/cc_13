@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        #employeeContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            border: 2px dashed #000; 
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <script src="cc_13.js"></script>
+<header>
+        <h1>Employee Directory</h1>
+        <p>Welcome to our employee directory</p>
+</header>
+<script src="cc_13.js"></script>
+<main>
+        <div id="employeeContainer">
+            <!-- Employee cards will be dynamically added here -->
+        </div>
+     </main>
+
+    <footer>
+        <p>&copy; 2025 T's Pro Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>
