@@ -22,6 +22,7 @@ function addEmployeeCard(name, position) {
         employeeContainer.removeChild(card);
         event.stopPropagation();
     });
+    //Task 5
     editButton.addEventListener("click", function () {
         //Replace name and position with input fields
         const nameInput = document.createElement("input");
